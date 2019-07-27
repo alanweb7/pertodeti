@@ -1,3 +1,22 @@
 page-home {
-
+  .btn-cat {
+      width: 100%;
+      border: 1px solid;
+      border-radius: 7px;
+      height: 90px;
+      text-align: center;
+      background-color: peru;
+      background-image: linear-gradient(to bottom right, red, yellow);
+  }
+  .categorie-icon {
+      font-size: 3em;
+      top: 5px;
+      margin-top: 4px;
+      position: relative;
+      color: #ffffff;
+  }
+  .categorie-name {
+    top: 5px;
+    position: relative;
+  }
 }

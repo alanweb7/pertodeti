@@ -8,11 +8,28 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <div>
+    <div class="header-home">
+    </div>
+  </div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div>
+    <button ion-button full color="primary" (click)="getAllCat()">Categorias</button>
+      <ion-item>
+          <ion-label>Cidade</ion-label>
+          <ion-select [(ngModel)]="city" placeholder="Selecionar">
+            <ion-option [value]="city.id" *ngFor="let city of cities">{{city.name}}</ion-option>
+          </ion-select>
+        </ion-item>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4 *ngFor="let cat of categories">
+          <div class="btn-cat" [ngStyle]="{'background-color': cat.style.backgroundcolor }">
+              <ion-icon class="{{cat.icon.icon}} categorie-icon" [ngStyle]="{'color':cat.icon.style.color}"></ion-icon>
+              <div style="width: 100%" class="categorie-name">{{cat.id_nome}}</div>
+          </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
