@@ -30,7 +30,7 @@
   <ion-grid>
     <ion-row>
       <ion-col col-4 *ngFor="let cat of categories">
-          <div class="btn-cat" [ngStyle]="{'background-color': cat.style.backgroundcolor }">
+          <div class="btn-cat" (click)="openCategorie()" [ngStyle]="{'background-color': cat.style.backgroundcolor }">
               <ion-icon class="{{cat.icon.icon}} categorie-icon" [ngStyle]="{'color':cat.icon.style.color}"></ion-icon>
               <div style="width: 100%" class="categorie-name">{{cat.id_nome}}</div>
           </div>

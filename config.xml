@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.pertodeti.app" version="7.7.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.com.pertodeti.guiacomercial" version="7.7.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Perto de Ti</name>
     <description>Guia do Comércio local.</description>
     <author email="contato@pertodeti.com.br" href="http://pertodeti.com.br/">Perto de Ti</author>
