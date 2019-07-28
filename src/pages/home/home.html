@@ -14,8 +14,13 @@
   </div>
 
   <div>
-    <button ion-button full color="primary" (click)="getAllCat()">Categorias</button>
-      <ion-item>
+    <!-- <button ion-button full color="primary" (click)="getAllCat()">Categorias</button> -->
+    <div class="header-categories">
+      <ion-item class="item-header-categories">
+        <ion-label class="title-header-categories"><h5>Categorias Perto de Ti</h5></ion-label>
+      </ion-item>
+    </div>
+        <ion-item>
           <ion-label>Cidade</ion-label>
           <ion-select [(ngModel)]="city" placeholder="Selecionar">
             <ion-option [value]="city.id" *ngFor="let city of cities">{{city.name}}</ion-option>

@@ -10,14 +10,14 @@
 <ion-content>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
+      <ion-icon [name]="item.data.icon.icon" item-start></ion-icon>
+      {{item.id_nome}}
       <div class="item-note" item-end>
-        {{item.note}}
+        {{item.id_nome}}
       </div>
     </button>
   </ion-list>
   <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
+    Você está acessando a categoria <b>{{selectedItem.id_nome}}</b>
   </div>
 </ion-content>

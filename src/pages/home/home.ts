@@ -19,13 +19,14 @@ export class HomePage {
     public navCtrl: NavController,
     public http: HTTP,
     ) {
+      this.getAllCat();
       this.cities = [
         {
-          id: 1,
+          id: 10,
           name: 'Ananindeua'
         },
         {
-          id: 2,
+          id: 19,
           name: 'Belém'
         }
       ];
@@ -75,5 +76,8 @@ export class HomePage {
       console.log(error.headers);
 
     });
+  }
+  openCategorie(){
+    alert('Seja o primeiro a anunciar aqui! Acesse pertodeti.com.br');
   }
 }
